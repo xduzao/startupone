@@ -174,7 +174,7 @@ class _DashboardsPageState extends State<DashboardsPage> {
                   title: Text(i.assetClass),
                   subtitle: Text('Alocação: ${allocPct.toStringAsFixed(1)}%'),
                   trailing: Text(
-                    (plPct >= 0 ? '+' : '') + plPct.toStringAsFixed(2) + '%',
+                    '${plPct >= 0 ? '+' : ''}${plPct.toStringAsFixed(2)}%',
                     style: TextStyle(color: plColor, fontWeight: FontWeight.w700),
                   ),
                 );

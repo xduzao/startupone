@@ -60,13 +60,13 @@ class ScorePage extends StatelessWidget {
     final pct = (percent * 100).toStringAsFixed(0);
     switch (label) {
       case 'Conservador':
-        return 'Score ${pct}%: carteira com baixa volatilidade, maior peso em renda fixa e liquidez. Desempenho consistente em cenários de juros estáveis.';
+        return 'Score $pct%: carteira com baixa volatilidade, maior peso em renda fixa e liquidez. Desempenho consistente em cenários de juros estáveis.';
       case 'Moderado':
-        return 'Score ${pct}%: equilíbrio entre renda fixa e variável. Notícias recentes favoreceram energia, enquanto mineração exige cautela.';
+        return 'Score $pct%: equilíbrio entre renda fixa e variável. Notícias recentes favoreceram energia, enquanto mineração exige cautela.';
       case 'Arrojado':
-        return 'Score ${pct}%: maior exposição a risco e crescimento. Curto prazo sensível a commodities, mas potencial de retorno acima do benchmark.';
+        return 'Score $pct%: maior exposição a risco e crescimento. Curto prazo sensível a commodities, mas potencial de retorno acima do benchmark.';
       default:
-        return 'Score ${pct}%: composição atual e sinais de notícias resultam neste desempenho simulado.';
+        return 'Score $pct%: composição atual e sinais de notícias resultam neste desempenho simulado.';
     }
   }
 }

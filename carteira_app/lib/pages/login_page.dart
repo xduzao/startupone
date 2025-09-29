@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const FlutterLogo(size: 56),
+                  Image.asset('assets/logo.png', height: 96, fit: BoxFit.contain),
                   const SizedBox(height: 16),
                   const Text('Entrar', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
                   const SizedBox(height: 16),

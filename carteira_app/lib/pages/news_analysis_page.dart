@@ -96,7 +96,7 @@ class NewsAnalysisPage extends StatelessWidget {
                             final sign = result.deltaPercent >= 0 ? '+' : '';
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
-                                content: Text('Simulação: $sign${(result.deltaPercent * 100).toStringAsFixed(2)}% (${sign}${NumberFormat.simpleCurrency(locale: 'pt_BR').format(result.deltaValue)})'),
+                                content: Text('Simulação: $sign${(result.deltaPercent * 100).toStringAsFixed(2)}% ($sign${NumberFormat.simpleCurrency(locale: 'pt_BR').format(result.deltaValue)})'),
                               ),
                             );
                           },

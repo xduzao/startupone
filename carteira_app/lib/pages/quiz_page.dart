@@ -16,7 +16,7 @@ class _QuizPageState extends State<QuizPage> {
   final questions = const [
     'Como você reage a oscilações de curto prazo?',
     'Qual seu objetivo de prazo para os investimentos?',
-    'Como você se sente com risco para buscar retorno maior?',
+    'Quão confortável você se sente em assumir risco para buscar retornos maiores?',
     'Qual percentual de renda você pode investir mensalmente?',
     'Qual sua experiência com investimentos?',
   ];
@@ -24,7 +24,7 @@ class _QuizPageState extends State<QuizPage> {
   final options = const [
     ['Vendo tudo', 'Fico desconfortável', 'Sigo o plano', 'Compro mais', 'Ignoro oscilações'],
     ['< 1 ano', '1-2 anos', '3-5 anos', '5-10 anos', '10+ anos'],
-    ['Nada', 'Pouco', 'Moderado', 'Alto', 'Muito alto'],
+    ['Muito desconfortável', 'Desconfortável', 'Neutro', 'Confortável', 'Muito confortável'],
     ['< 5%', '5-10%', '10-20%', '20-30%', '30%+'],
     ['Nenhuma', 'Pouca', 'Média', 'Alta', 'Profissional'],
   ];
