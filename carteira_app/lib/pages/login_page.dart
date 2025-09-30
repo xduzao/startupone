@@ -18,8 +18,18 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Image.asset('assets/logo.png', height: 96, fit: BoxFit.contain),
-                  const SizedBox(height: 16),
+                  SizedBox(
+                    height: 140,
+                    width: double.infinity,
+                    child: ClipRect(
+                      child: FittedBox(
+                        fit: BoxFit.cover,
+                        alignment: Alignment.center,
+                        child: Image.asset('assets/logo.png'),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
                   const Text('Entrar', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
                   const SizedBox(height: 16),
                   TextField(decoration: const InputDecoration(labelText: 'E-mail')),

@@ -33,21 +33,17 @@ class _EducationPageState extends State<EducationPage> {
         children: [
           Text('Educação Financeira', style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 8),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: categories.map((c) {
-                final sel = c == _selected;
-                return Padding(
-                  padding: const EdgeInsets.only(right: 8),
-                  child: ChoiceChip(
-                    selected: sel,
-                    label: Text(c),
-                    onSelected: (_) => setState(() => _selected = c),
-                  ),
-                );
-              }).toList(),
-            ),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: categories.map((c) {
+              final sel = c == _selected;
+              return ChoiceChip(
+                selected: sel,
+                label: Text(c),
+                onSelected: (_) => setState(() => _selected = c),
+              );
+            }).toList(),
           ),
           const SizedBox(height: 12),
           Expanded(
